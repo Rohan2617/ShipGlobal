@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Number Guessing Game</title>
+    <link rel="stylesheet" href="c.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Guess the Number!</h1>
+        <label for="attempts">Choose your attempts:</label>
+        <input type="number" id="attempts" min="1" max="10" value="5">
+        <div class="feedback"></div>
+        <input type="number" id="userGuess" placeholder="Enter your guess">
+        <button id="submitGuess">Check</button>
+        <p>You have <span id="attemptsLeft">5</span> chances</p>
+        <div id="guessList"></div> <!-- New div to display all guesses -->
+        <button id="restartGame" style="display:none;">Restart Game</button>
+    </div>
+    <script src="c.js"></script>
+</body>
+</html>

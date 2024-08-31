@@ -1,0 +1,108 @@
+/* Import the Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('back_img.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.game-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #ff6f61;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="number"]:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    transform: scale(1.05);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff856f;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #e55850;
+}
+
+button#restartGame {
+    background-color: #28a745;
+    margin-bottom: 15px; /* Space between restart button and guess history */
+}
+
+.feedback {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #ffdfba;
+}
+
+#guessList {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#guessList p {
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        width: 90%;
+    }
+}
